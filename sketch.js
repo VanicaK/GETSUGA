@@ -478,8 +478,9 @@ function keyPressed() {
   }
   if (keyCode === 13) {
     if (gameState == 2) {
-      if(username.value().length<=25){
-        scorename = username.value()
+      var uval=username.value()
+      if(uval.length()<=20){
+        scorename = uval
       }else{
         scorename="useless neek"
       }
